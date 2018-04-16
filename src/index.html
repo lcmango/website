@@ -55,4 +55,142 @@
                                <span>私人FM</span>
                            </a>
                            <a href="#">
-                               <img src="images/1.png" a
+                               <img src="images/1.png" alt="">
+                               <span>私人FM</span>
+                           </a>
+                           <a href="#">
+                               <img src="images/1.png" alt="">
+                               <span>私人FM</span>
+                           </a>
+                           <a href="#">
+                               <img src="images/1.png" alt="">
+                               <span>私人FM</span>
+                           </a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide tabslide">
+
+                        <div class="swiper-container lunbo">
+                            <div class="swiper-wrapper lbwrapper">
+                                <div class="swiper-slide lbslide">
+                                    <img src="images/img.png" alt="">
+                                </div>
+                                <div class="swiper-slide lbslide">
+                                    <img src="images/img.png" alt="">
+                                </div>
+                                <div class="swiper-slide lbslide">
+                                    <img src="images/img.png" alt="">
+                                </div>
+                                <div class="swiper-slide lbslide">
+                                    <img src="images/img.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list">
+                           <a href="#">
+                               <img src="images/2.png" alt="">
+                               <span>歌单</span>
+                           </a>
+                           <a href="#">
+                               <img src="images/2.png" alt="">
+                               <span>歌单</span>
+                           </a>
+                           <a href="#">
+                               <img src="images/2.png" alt="">
+                               <span>歌单</span>
+                           </a>
+                           <a href="#">
+                               <img src="images/2.png" alt="">
+                               <span>歌单</span>
+                           </a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide tabslide">
+
+                        <div class="swiper-container lunbo">
+                            <div class="swiper-wrapper lbwrapper">
+                                <div class="swiper-slide lbslide">
+                                    <img src="images/img.png" alt="">
+                                </div>
+                                <div class="swiper-slide lbslide">
+                                    <img src="images/img.png" alt="">
+                                </div>
+                                <div class="swiper-slide lbslide">
+                                    <img src="images/img.png" alt="">
+                                </div>
+                                <div class="swiper-slide lbslide">
+                                    <img src="images/img.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list">
+                           <a href="#">
+                               <img src="images/3.png" alt="">
+                               <span>每日推荐</span>
+                           </a>
+                           <a href="#">
+                               <img src="images/3.png" alt="">
+                               <span>每日推荐</span>
+                           </a>
+                           <a href="#">
+                               <img src="images/3.png" alt="">
+                               <span>每日推荐</span>
+                           </a>
+                           <a href="#">
+                               <img src="images/3.png" alt="">
+                               <span>每日推荐</span>
+                           </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <a href="#">
+                <i class="iconfont">&#xe716;</i>
+                <span>发现音乐</span>
+            </a>
+            <a href="#">
+                <i class="iconfont">&#xe716;</i>
+                <span>发现音乐</span>
+            </a>
+            <a href="#">
+                <i class="iconfont">&#xe716;</i>
+                <span>发现音乐</span>
+            </a>
+            <a href="#">
+                <i class="iconfont">&#xe716;</i>
+                <span>发现音乐</span>
+            </a>
+        </footer>
+    </div>
+
+    <script src="js/lib/swiper-3.4.2.min.js"></script>
+
+    <script src="js/lib/jquery.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".lunbo",{
+            loop:true,
+            autoplay:true,
+            autoplay:1000
+        })
+
+        var mySwiper = new Swiper(".tab",{
+            onSlideChangeStart:function(e){
+                $(".nav a").eq(e.activeIndex).addClass('active').siblings().removeClass('acrive');
+            }
+         })
+         $(".nav a").on("click",function(){
+            $(this).addClass('active').siblings().removeClass("active");
+            var ind = $(this).index();
+            mySwiper.slideTo(ind);
+         })
+    </script>
+</body>
+</html>

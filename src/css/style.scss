@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-04-16 08:56:18
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-04-16 09:38:26
+* @Last Modified time: 2018-04-16 09:44:21
 */
 *{
     padding:0;
@@ -83,6 +83,9 @@ section{
                 color:#C3473A;
             };
         }
+        .active{
+            border-bottom:1px solid #C3473A;
+        }
     }
     .tab{
         width: 100%;
@@ -98,4 +101,46 @@ section{
                 }
             }
         }
-       
+        .list{
+            width: 100%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:.25rem 3%;
+            a{
+                display:flex;
+                justify-content:space-between;
+                align-items:center;
+                flex-direction:column;
+                img{
+                    width: 60%;
+                    height:auto;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#353433;
+    height:.5rem;
+    padding:0 3%;
+    a{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        flex-direction:column;
+        span{
+            color:#fff;
+            font-size:.1rem;
+            padding:.05rem;
+        }
+        i{
+            color:#fff;
+        }
+    }
+}

@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-04-16 08:56:18
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-04-16 09:38:26
+* @Last Modified time: 2018-04-16 09:44:21
 */
 * {
   padding: 0;
@@ -72,6 +72,8 @@ section {
       text-align: center; }
       section .nav a:first-child {
         color: #C3473A; }
+    section .nav .active {
+      border-bottom: 1px solid #C3473A; }
   section .tab {
     width: 100%; }
     section .tab .lunbo {
@@ -83,4 +85,38 @@ section {
           section .tab .lunbo .lbwrapper .lbslide img {
             width: 100%; }
     section .tab .list {
-      width: 10
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: .25rem 3%; }
+      section .tab .list a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column; }
+        section .tab .list a img {
+          width: 60%;
+          height: auto; }
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #353433;
+  height: .5rem;
+  padding: 0 3%; }
+  footer a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; }
+    footer a span {
+      color: #fff;
+      font-size: .1rem;
+      padding: .05rem; }
+    footer a i {
+      color: #fff; }
+
+/*# sourceMappingURL=style.css.map */
